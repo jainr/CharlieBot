@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharlieBot", "CharlieBot\CharlieBot.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchItAPI", "..\..\..\..\Documents\Visual Studio 2015\Projects\MBTABot\CatchItAPI\CatchItAPI.csproj", "{5ECD275A-586F-4740-BDBF-7D08630B0B3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatchItAPI", "CatchItAPI\CatchItAPI.csproj", "{5ECD275A-586F-4740-BDBF-7D08630B0B3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
