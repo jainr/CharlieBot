@@ -1,0 +1,39 @@
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Bot Application1.dll.config
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Bot Application1.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Bot Application1.pdb
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Autofac.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Chronic.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.Bot.Builder.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.Bot.Connector.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Newtonsoft.Json.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.Net.Http.Formatting.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.Web.Http.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.Web.Http.WebHost.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Autofac.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.Bot.Builder.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.Bot.Connector.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.Rest.ClientRuntime.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\Newtonsoft.Json.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.Net.Http.Formatting.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.Web.Http.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\System.Web.Http.WebHost.xml
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\obj\Release\Bot Application1.dll
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\obj\Release\Bot Application1.pdb
+C:\Users\rijai\Documents\OneWeek-Hackathon\CharlieBot\CharlieBot\CharlieBot\obj\Release\CharlieBot.csprojResolveAssemblyReference.cache
