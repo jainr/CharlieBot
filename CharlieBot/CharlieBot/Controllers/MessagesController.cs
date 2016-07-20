@@ -8,7 +8,9 @@ using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
 using Newtonsoft.Json;
 using CatchIt.Data;
+using CatchIt.GTFS;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace CharlieBot
 {
@@ -84,20 +86,32 @@ namespace CharlieBot
                 // Get Users specific state data
                 StateClient stateClient = activity.GetStateClient();
                 BotData userData = await stateClient.BotState.GetUserDataAsync(activity.ChannelId, activity.From.Id);
-                string stop = GetId(activity.Text, "stop");
-                string route = GetId(activity.Text, "route");
+                string routeId = GetId(activity.Text, "route");
+                if (string.IsNullOrEmpty(routeId))
+                {
+                    // set local routeId from user state
+                    routeId = userData.GetProperty<string>("RouteId");
+                }
+                string stopName = GetId(activity.Text, "stop");
+                if (string.IsNullOrEmpty(stopName))
+                {
+                    // set local routeId from user state
+                    stopName = userData.GetProperty<string>("StopId");
+                }
 
-                if (!string.IsNullOrEmpty(stop))
+                string stopId = await GetStopId(routeId, stopName);
+
+                if (!string.IsNullOrEmpty(stopId))
                 {
                     // Set StopID State
-                    userData.SetProperty<string>("StopId", stop);
+                    userData.SetProperty<string>("StopId", stopId);
                     await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
                 }
 
-                if (!string.IsNullOrEmpty(route))
+                if (!string.IsNullOrEmpty(routeId))
                 {
                     // Set StopID State
-                    userData.SetProperty<string>("RouteId", route);
+                    userData.SetProperty<string>("RouteId", routeId);
                     await stateClient.BotState.SetUserDataAsync(activity.ChannelId, activity.From.Id, userData);
                 }
 
@@ -130,7 +144,6 @@ namespace CharlieBot
                 {
                     // Call MBTA API for realtime data
                     string stopID = userData.GetProperty<string>("StopId");
-                    string stopName = "";
                     List<string> routeIds = new List<string>();
                     routeIds.Add(userData.GetProperty<string>("RouteId"));
                     // Delete save state 
@@ -193,8 +206,34 @@ namespace CharlieBot
             return retVal;
         }
 
-        private string GetStopId (string stopName)
+        private async Task<string> GetStopId(string routeId, string stopName)
         {
+            if (string.IsNullOrEmpty(routeId) || string.IsNullOrEmpty(stopName)) return "";
+            StopByRoute stops = await MBTAManager.GetStopsByRoute(routeId);
+            try
+            {
+                foreach (var d in stops.direction)
+                {
+                    CatchIt.GTFS.Stop stop = d.stop.Find(s => s.stop_id == stopName);
+                    if (stop != null) return stop.stop_id;
+
+                    // Keep looking for stop Id
+                    foreach (var s in d.stop)
+                    {
+                        if (s.parent_station_name.ToLower().Contains(stopName.ToLower()) || (s.stop_name.ToLower().Contains(stopName.ToLower())))
+                        {
+                            if (!string.IsNullOrEmpty(s.parent_station)) return s.parent_station;
+                            return s.stop_id;
+                        }
+                    }
+
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message.ToString());
+                Debugger.Break();                
+            }
             return "";
         }
     }
