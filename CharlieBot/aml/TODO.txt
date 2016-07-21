@@ -1,0 +1,12 @@
+﻿* Add retraining for the two web service routes of interest
+   - Programmatic, via C#?
+
+* Add ability to deploy new web services for new routes
+   - Need to store API key and web service URL somewhere that the wrapper web service
+     can access them; will explore options
+
+* Ensure retraining data can be drawn from SQL server in expected format
+   - Query similar to:
+     SELECT callts AS mbta_api_call_time, predArrive - callts AS mbta_api_pred_time_left
+     FROM nextbus_predictions
+     WHERE routetag="134" AND stoptag="9161"

@@ -18,3 +18,4 @@ C:\Users\mawah\Documents\hackathon\CharlieBot\StockBot\bin\System.Web.Http.xml
 C:\Users\mawah\Documents\hackathon\CharlieBot\StockBot\bin\System.Web.Http.WebHost.xml
 C:\Users\mawah\Documents\hackathon\CharlieBot\StockBot\obj\Debug\StockBot.dll
 C:\Users\mawah\Documents\hackathon\CharlieBot\StockBot\obj\Debug\StockBot.pdb
+C:\Users\mawah\Documents\hackathon\CharlieBot\StockBot\obj\Debug\StockBot.csprojResolveAssemblyReference.cache
